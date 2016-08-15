@@ -1,7 +1,12 @@
+
+
 /**
  * Created by inna on 15/08/2016.
  */
 public class task1 {
+
+    static String text = "Lorem  ipsum dolor sit amet, consectetur " +
+            " adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore  magna aliqua.";
 
     public static void main(String[] args){
 
@@ -9,15 +14,10 @@ public class task1 {
         Spaсe(); // Task 2 + BONUS 3
         WordWithM(); // BONUS 1
 
-        String text = "Lorem  ipsum dolor sit amet, consectetur " +
-                " adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore  magna aliqua.";
 
     }
 
         private static void Spaсe() {
-
-            String text = "Lorem  ipsum dolor sit amet, consectetur " +
-                    " adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore  magna aliqua.";
 
             char[] chArray = text.toCharArray();
 
@@ -28,7 +28,6 @@ public class task1 {
                 if(chArray[i] == ' '){
 
                     a = a + 1;
-
                 }
             }
 
@@ -38,8 +37,6 @@ public class task1 {
 
         private static void Word() {
 
-            String text = "Lorem  ipsum dolor sit amet, consectetur " +
-                " adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore  magna aliqua.";
 
             boolean isContain = true;
 
@@ -56,9 +53,6 @@ public class task1 {
     }
 
         private static void WordWithM() {
-
-            String text = "Lorem  ipsum dolor sit amet, consectetur " +
-                    " adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore  magna aliqua.";
 
             boolean isContain = true;
 
@@ -81,4 +75,5 @@ public class task1 {
 
             System.out.println("Words with M amount = " + WordWithM);
         }
+
     }
