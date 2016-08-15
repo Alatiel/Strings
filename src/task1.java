@@ -8,29 +8,28 @@ public class task1 {
         Word();
         Spaсe();
 
-
     }
 
     private static void Word() {
 
-        String text = "Lorem  ipsum dolor sit amet, consectetur " +
+        String text = "Lorem   ipsum dolor sit amet, consectetur " +
                 " adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore  magna aliqua.";
 
-        char[] chArray = text.toCharArray();
+        boolean isContain = true;
 
-        int a = 0;
+        while(isContain = text.contains("  ")) {
 
-        for(int i = 0; i<chArray.length; i++) {
-
-            if (chArray[i] == ' ') {
-
-                chArray[i] = ' ';
-            }
+            text = text.replace("  ", " ");
         }
+
+        String[] textParts = text.split(" ");
+
+
+        }
+
+
+
         // String a = text.substring();
-
-    }
-
 
     private static void Spaсe() {
 
@@ -48,9 +47,7 @@ public class task1 {
                         a = a + 1;
                 }
             }
-            System.out.println(a);
+            System.out.println("Spaces amount = " + a);
         }
-
-
 
     }
