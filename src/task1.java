@@ -5,10 +5,34 @@ public class task1 {
 
     public static void main(String[] args){
 
+        Word();
         Spaсe();
 
+
     }
-        private static void Spaсe() {
+
+    private static void Word() {
+
+        String text = "Lorem  ipsum dolor sit amet, consectetur " +
+                " adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore  magna aliqua.";
+
+        char[] chArray = text.toCharArray();
+
+        int a = 0;
+
+        for(int i = 0; i<chArray.length; i++) {
+
+            if (chArray[i] == ' ') {
+
+                chArray[i] = ' ';
+            }
+        }
+        // String a = text.substring();
+
+    }
+
+
+    private static void Spaсe() {
 
             String text = "Lorem  ipsum dolor sit amet, consectetur " +
                     " adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore  magna aliqua.";
@@ -26,4 +50,7 @@ public class task1 {
             }
             System.out.println(a);
         }
+
+
+
     }
