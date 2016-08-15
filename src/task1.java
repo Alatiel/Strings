@@ -22,14 +22,12 @@ public class task1 {
             text = text.replace("  ", " ");
         }
 
-        String[] textParts = text.split(" ");
+            String[] textParts = text.split(" ");
 
+            System.out.println("Wolds amount = " + textParts.length);
 
         }
 
-
-
-        // String a = text.substring();
 
     private static void Spaсe() {
 
