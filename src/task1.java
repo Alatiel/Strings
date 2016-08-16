@@ -25,7 +25,7 @@ public class task1 {
 
                 if(chArray[i] == ' '){
 
-                    a = a + 1;
+                    a++;
                 }
             }
 
@@ -35,9 +35,7 @@ public class task1 {
 
         private static void Word() {
 
-            boolean isContain = true;
-
-                while(isContain = text.contains("  ")) {
+                while(text.contains("  ")) {
 
                 text = text.replace("  ", " ");
 
@@ -50,9 +48,7 @@ public class task1 {
 
         private static void WordWithM() {
 
-            boolean isContain = true;
-
-            while(isContain = text.contains("  ")) {
+            while(text.contains("  ")) {
 
                 text = text.replace("  ", " ");
             }
@@ -65,7 +61,7 @@ public class task1 {
 
                 if(textParts[i].contains("m")){
 
-                    WordWithM = WordWithM + 1;
+                    WordWithM++;
                 }
             }
 
