@@ -14,9 +14,7 @@ public class task1 {
         Spaсe(); // Task 2 + BONUS 3
         WordWithM(); // BONUS 1
 
-
     }
-
         private static void Spaсe() {
 
             char[] chArray = text.toCharArray();
@@ -37,7 +35,6 @@ public class task1 {
 
         private static void Word() {
 
-
             boolean isContain = true;
 
                 while(isContain = text.contains("  ")) {
@@ -49,14 +46,13 @@ public class task1 {
             String[] textParts = text.split(" ");
 
             System.out.println("Wolds amount = " + textParts.length);
-
     }
 
         private static void WordWithM() {
 
             boolean isContain = true;
 
-                while(isContain = text.contains("  ")) {
+            while(isContain = text.contains("  ")) {
 
                 text = text.replace("  ", " ");
             }
@@ -75,5 +71,4 @@ public class task1 {
 
             System.out.println("Words with M amount = " + WordWithM);
         }
-
     }
